@@ -4,7 +4,7 @@ import cors from 'cors'
 import conn from './db/conn.js'
 
 const app = express();
-const port = 8080;
+const port = process.env.PORT||8080;
 
 // Set up a route to handle requests
 app.use(cors())
