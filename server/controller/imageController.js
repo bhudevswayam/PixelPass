@@ -7,7 +7,7 @@ export const uploadImage = async (req,res) =>{
     try{
         const file = await File.create(fileObj);
         console.log(file);
-        res.status(200).json({path: `http://localhost:8080/file/${file._id}`});
+        res.status(200).json({path: `https://pixelpass.onrender.com/file/${file._id}`});
     }
     catch(e){
         console.error(e);
